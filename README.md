@@ -26,9 +26,9 @@ A Python automation tool that scrapes job listings using **JobSpy**, saves them 
 ## Environment Variables
 Create a `.env` file:
 
-SENDER_EMAIL=your_email@gmail.com
-EMAIL_PASSWORD=your_app_password > ⚠️ Gmail requires an App Password (not your normal password)
-RECIPIENT_EMAIL=recipient_email@gmail.com
+SENDER_EMAIL=your_email@gmail.com  
+EMAIL_PASSWORD=your_app_password ⚠️ Gmail requires an App Password (not your normal password)  
+RECIPIENT_EMAIL=recipient_email@gmail.com  
 
 ## Run Locally
 
