@@ -4,6 +4,11 @@ A Python automation tool that scrapes job listings using **JobSpy**, saves them 
 
 ---
 
+## Live Demo
+https://ccolkereybel.github.io/Job_Searcher/
+
+---
+
 ## What it does
 
 - Scrapes job listings using `python-jobspy`
