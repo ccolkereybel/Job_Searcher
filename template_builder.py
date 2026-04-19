@@ -15,10 +15,16 @@ def build_email_body(file_path):
         reader = csv.DictReader(f)
         for job in reader:
             jobs_html += f"""
-                <li style="padding:8px; border-radius:10px;">
-                    <strong>{job.get('title')}</strong></br>
-                    {job.get('company')}<br>
-                    <a href="{job.get('job_url')}">View Job</a>
-                </li>
+            <li style="
+                margin-bottom:15px;
+                padding:12px;
+                border:1px solid #eee;
+                border-radius:8px;
+                background:#fafafa;
+            ">
+                <strong style="font-size:16px;">{job.get('title')}</strong><br>
+                <span style="color:#555;">{job.get('company')}</span><br>
+                <a href="{job.get('job_url')}" style="color:#1e88e5;">View Job</a>
+            </li>
             """
     return template.replace("{{jobs}}", jobs_html)

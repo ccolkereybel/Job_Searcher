@@ -7,7 +7,7 @@ def send_email(html_content, email_address, email_password, recipient):
     msg = EmailMessage()
     msg["Subject"] = "Daily Job Listings"
     msg["From"] = email_address
-    msg["To"] = recipient
+    msg["To"] = email_address
 
     msg.set_content("Job listings attached")
     msg.add_alternative(html_content, subtype="html")
